@@ -1,1 +1,1 @@
-export const EXAMPLE = 'EXAMPLE_ACTION';
+export const SEND_MESSAGE = 'SEND_MESSAGE';

@@ -11,6 +11,7 @@ var SRC_DIR = path.resolve(__dirname, 'src'); // Define the source directory
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: './public/index.html',
   filename: 'index.html',
+  favicon: "./src/assets/favicon.png",
   inject: 'body',
 });
 /* Webpack configuration setup     
@@ -56,12 +57,16 @@ module.exports =(env)=> {
                 use: 'babel-loader',
               },
               {
-                test: /\.(png|jpeg|jpg|gif|svg)$/,
-                use: [
-                  {
-                    loader: 'file-loader',
-                    options: {},
-                  },
+                test: /\.(png|jpeg|jpg|gif|svg)$/i,
+                use: [ 
+                      'file-loader',
+                      {
+                        loader: 'image-webpack-loader',
+                        options: {
+                          bypassOnDebug: true, // webpack@1.x
+                          disable: true, // webpack@2.x and newer
+                        },
+                      },
                 ],
               },
               {
