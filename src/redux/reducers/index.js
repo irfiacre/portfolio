@@ -1,8 +1,9 @@
 // For more information visit: https://redux.js.org/api/combinereducers
 
 import { combineReducers } from 'redux';
-import exampleReducer from './exampleReducer';
+import sendMessage from './sendMessage';
+
 
 export default combineReducers({
-    example: exampleReducer, 
+    messageData: sendMessage,
 });
