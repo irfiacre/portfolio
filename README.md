@@ -1,51 +1,8 @@
-# Portfolio de Nicolás
+# Portfolio for Fiacre
+[![Netlify Status](https://api.netlify.com/api/v1/badges/decc7677-2be5-47a9-9324-650ba9aaeb81/deploy-status)](https://app.netlify.com/sites/busydev/deploys)
 
-## Introduction
+## Backlog:
 
-¡Hola y bienvenido! Soy un desarrollador con un fuerte enfoque en tecnologías frontend y backend.
+- Finish project modification (add education, and work experience)
 
-## Skills
-
-### Lenguajes
-
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- SQL
-
-### Frameworks y Librerías
-
-- Laravel
-- Node.js
-- Express.js
-- React
-- React Query
-- Redux
-- Context API
-
-### Base de datos y Cloud
-
-- MySQL
-- Firebase
-- Amazon S3
-
-### Herramientas
-
-- Git
-- npm
-- Webpack
-- Unit Testing
-
-## Getting Started
-
-After cloning the repository, you can run:
-
-npm install or yarn install then npm run dev or yarn dev
-
-## Contact Information
-
-If you would like to collaborate on a project, have any questions, or simply want to connect, feel free to reach out to me.
-
-- Email: [nicoc12024@gmail.com](mailto:nicoc12024@gmail.com)
-- LinkedIn: [https://www.linkedin.com/in/nicocabello](https://www.linkedin.com/in/nicocabello)
+#### Inspired by [portfolioNextJs](https://github.com/nicoc12024/portfolioNextJs)

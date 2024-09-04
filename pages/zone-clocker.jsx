@@ -78,7 +78,7 @@ function HouseMarketplace() {
             </div>
           </div>
         </div>
-        <Link  legacyBehaviorhref="/#projects">
+        <Link  legacyBehavior href="/#projects">
           <p className="underline cursor-pointer">Volver</p>
         </Link>
       </div>
