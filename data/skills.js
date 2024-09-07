@@ -18,16 +18,16 @@ export const skills = [
     language: "Next JS",
     icon: <SiNextdotjs size="56px" />,
   },
-  {
-    id: 2,
-    language: "PHP",
-    icon: <FaPhp size="56px" />,
-  },
-  {
-    id: 3,
-    language: "Laravel",
-    icon: <FaLaravel size="56px" />,
-  },
+  // {
+  //   id: 2,
+  //   language: "PHP",
+  //   icon: <FaPhp size="56px" />,
+  // },
+  // {
+  //   id: 3,
+  //   language: "Laravel",
+  //   icon: <FaLaravel size="56px" />,
+  // },
   {
     id: 4,
     language: "MySQL",

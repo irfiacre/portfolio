@@ -17,7 +17,6 @@ function About() {
             With a great eye for detail and a strong problem-solving mindset, I am dedicated to 
             delivering high-quality solutions.
           </p>
-
           <Link legacyBehavior href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Get to know my work.
