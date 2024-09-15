@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Education from "../components/Education";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Education />
       </div>
     </div>
   );

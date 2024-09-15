@@ -43,14 +43,14 @@ const ModalComponent = ({ title }: { title: string }) => {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               >
-                I accept
+                GitHub
               </button>
               <button
                 data-modal-hide="default-modal"
                 type="button"
                 className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10"
               >
-                Decline
+                Live
               </button>
             </div>
           </div>
