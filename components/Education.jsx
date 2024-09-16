@@ -1,5 +1,5 @@
 import ProjectItem from "./ProjectItem";
-import { projects } from "../data/projects";
+import { education } from "../data/projects";
 
 function Education() {
   return (

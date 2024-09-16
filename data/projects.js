@@ -26,3 +26,24 @@ export const projects = [
     tech: "SCSS | Material-UI | React JS | TypeScript | Node JS | Express JS | MySQL | Unit Testing",
   },
 ];
+
+export const education = [
+  {
+    id: 0,
+    title: "Adventist University Of Central Africa (AUCA)",
+    subtitle: "EU Blue Card- eligible university & degree. Top 10% of my class",
+    startDate: "Jan/2020",
+    endDate: "Nov/2024",
+    location: "Rwanda, Kigali",
+    relevantCourses: [
+      "Mobile Programming",
+      "Java Programming",
+      "Software Project Management",
+      "Software Modeling & Design",
+      "LINUX Administration",
+      "Operating Systems",
+      "Database Development with PL/SQL",
+      "Theory of Computation",
+    ],
+  },
+];
