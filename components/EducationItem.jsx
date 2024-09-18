@@ -38,7 +38,6 @@ const ProjectItem = ({
         <p className="text-sm lg:text-base pb-4 pt-2 text-white text-center">
           {subtitle}
         </p>
-
         <p
           className="text-center py-2 px-10 rounded-lg w-fit mx-auto bg-white text-gray-700 font-bold text-sm lg:text-lg lg:py-3 cursor-pointer"
           onClick={() => setOpen(true)}
