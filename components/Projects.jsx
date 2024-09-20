@@ -12,8 +12,7 @@ function Projects() {
         <p>
           - Repos: https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28
           - Auth: https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#authentication
-          - Commits: https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28
-          
+          - Commits: https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28 
         </p>
         <br />
         <div className="grid md:grid-cols-2 gap-8">
