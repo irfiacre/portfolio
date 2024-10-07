@@ -6,24 +6,33 @@ export const projects = [
   {
     id: 0,
     title:
-      "Aplicación para la Gestión de Horarios de Empleados y Zonas de Trabajo - FullStack",
+      "Driver Hub (Web)",
+    description:"This is a recruitment web application intended mainly as a comprehensive platform to efficiently manage both submitted applications and individual onboarding plans for drivers.",
     backgroundImg: home,
-    projectUrl: "/zone-clocker",
-    tech: "React JS (vite) | React Redux | TypeScript | Tailwind | Node JS | Express JS | MySQL",
+    tech: ["React JS (vite)" ,"React Redux" ,"TypeScript" ,"Tailwind" ,"Firebase Functions", "Firestore DB"],
+    link: 'driverhub.netlify.app/',
+    screenShots:[],
+    thumbnail:''
+    
   },
   {
     id: 1,
-    title: "Social App - FullStack",
+    title: "Driver Hub (mobile)",
     backgroundImg: socialapp,
-    projectUrl: "/social-app",
-    tech: "React JS | Tailwind | Material-UI | Node JS | Express JS | MySQL | Unit Testing",
+    description:"This is a recruitment system that provides drivers with a user-friendly mobile app that allows them to submit applications, take onboarding courses, submit feedback, and track the status of application and onboarding plan.",
+    tech: ["React Native" ,"Expo" ,"TypeScript" ,"Native Wind" ,"Firebase Functions", "Firestore DB"],
+    link: 'driverhub.netlify.app/',
+    screenShots:[],
+    thumbnail:''
   },
   {
     id: 2,
-    title: "Blog - FullStack",
-    backgroundImg: blog,
-    projectUrl: "/blog",
-    tech: "SCSS | Material-UI | React JS | TypeScript | Node JS | Express JS | MySQL | Unit Testing",
+    title: "ML-Prediction-AI",
+    description:"A machine learning model, that makes predictions for certain outcomes basing on a certain provided parameters",
+    tech: ["React Native" ,"Expo" ,"TypeScript" ,"Native Wind" ,"Firebase Functions", "Firestore DB"],
+    link: 'driverhub.netlify.app/',
+    screenShots:[],
+    thumbnail:''
   },
 ];
 

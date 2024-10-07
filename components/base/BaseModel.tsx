@@ -2,23 +2,18 @@ import React from "react";
 import BaseCard from "./BaseCard";
 
 const BaseModel = ({
-  title,
-  children,
-  containerStyle,
+  projectContent,
   onClose,
 }: {
-  title: string;
-  children: any;
+  projectContent: string;
   onClose: () => void;
-  containerStyle?: string;
 }) => {
   return (
     <div className="fixed inset-0 bg-gray-900 bg-opacity-50 transition-opacity flex justify-center items-center z-50">
-      <div className={containerStyle}>
         <BaseCard className="h-1/4" children={undefined}>
           <div className="flex flex-row items-center justify-between p-5">
             <h1 className="text-xl text-textLightColor font-normal capitalize">
-              {title}
+              {"title"}
             </h1>
             <button
               type="button"
@@ -43,10 +38,8 @@ const BaseModel = ({
               <span className="sr-only">Close modal</span>
             </button>
           </div>
-          <div>{children}</div>
         </BaseCard>
       </div>
-    </div>
   );
 };
 
