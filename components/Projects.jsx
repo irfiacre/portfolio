@@ -16,9 +16,9 @@ function Projects() {
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-6 py-16">
         <p className="text-xl tracking-widest uppercase text-primary">
-          Personal Projects
+          Personal Projects <span className="text-xs capitalize">(last GitHub Sync just now)</span>
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4">
           {projects.map((project) => (
             <ProjectItem
               details={project}

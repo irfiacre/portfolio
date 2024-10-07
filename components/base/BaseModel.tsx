@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import BaseCard from "./BaseCard";
+import Link from "next/link";
 
 const BaseModel = ({
   projectContent,
@@ -8,13 +9,20 @@ const BaseModel = ({
   projectContent: any;
   onClose: () => void;
 }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleIframeLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 transition-opacity flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 transition-opacity flex justify-center items-center z-50 my-4">
       <BaseCard>
-        <div className="flex flex-row items-center justify-between p-5">
-          <h1 className="text-xl text-textLightColor font-normal capitalize">
-            {projectContent.name}
+        <div className="w-full flex flex-row items-center justify-between p-4">
+          <h1 className="text-2xl font-bold text-textLightColor capitalize">
+            Project: {projectContent.name}
           </h1>
+
           <button
             type="button"
             className="top-3 end-2.5 text-gray-100 bg-transparent hover:bg-primary hover:text-white rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
@@ -37,6 +45,45 @@ const BaseModel = ({
             </svg>
             <span className="sr-only">Close modal</span>
           </button>
+        </div>
+
+        <div className="flex flex-column -md:flex-wrap">
+          <div className="w-3/4 space-y-5 px-4">
+            <p>{projectContent.description}</p>
+            <p>
+              <Link href={projectContent.html_url} target="_blank" className="font-medium hover:underline p-2">GitHub</Link>
+              {projectContent.homepage &&<Link href={projectContent.homepage} target="_blank" className="text-primary hover:underline p-2">Live Demo</Link>}
+            </p>
+            <div>
+              {projectContent.topics.map((topic: any)=>(
+                <span key={topic} className="rounded-full bg-primary/10 p-3 cursor-pointer hover:scale-105 ease-in duration-300 m-1">{topic}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full p-2">
+            <h1 className="text-xl font-bold text-gray-400 capitalize w-full text-center py-2">
+              {projectContent.homepage ? "Live Preview" : "GitHub Repo"}
+            </h1>
+            <div style={{ height: "60vh", width: "100%" }}>
+              {isLoading && (
+                <div className="text-center justify-center items-center py-11">
+                  <p className="text-gray-300">Loading Live Preview...</p>
+                </div>
+              )}
+              <iframe
+                src={
+                  projectContent.homepage
+                    ? projectContent.homepage
+                    : projectContent.html_url
+                }
+                title="Driver Hub"
+                style={{ width: "100%", height: "100%", border: "1px solid #DDDDDD", borderRadius:"6px" }}
+                onLoad={handleIframeLoad}
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </BaseCard>
     </div>

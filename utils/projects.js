@@ -22,7 +22,7 @@ const handleGetGithubProjects = async (repoName) => {
     headers: {
       'X-GitHub-Api-Version': '2022-11-28'
     },
-    sort:"updated"
+    sort:"pushed"
   })
 
   return repos.data || [];
