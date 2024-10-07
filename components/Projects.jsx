@@ -12,8 +12,6 @@ function Projects() {
     })();
   }, []);
 
-  console.log("---->", projects);
-
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-6 py-16">
@@ -24,6 +22,7 @@ function Projects() {
           {projects.map((project) => (
             <ProjectItem
               details={project}
+              key={project.name}
             />
           ))}
           {/* <div style={{ height: '100vh', width: '100%' }}>

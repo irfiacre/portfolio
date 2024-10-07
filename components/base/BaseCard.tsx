@@ -4,7 +4,7 @@ const BaseCard = ({
   children,
   className,
 }: {
-  children: any;
+  children?: any;
   className?: string; // For tailwind additional styles
 }) => {
   return (
