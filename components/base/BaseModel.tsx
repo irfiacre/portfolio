@@ -16,7 +16,7 @@ const BaseModel = ({
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 transition-opacity flex justify-center items-center z-50 my-4">
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 transition-opacity flex justify-center items-center z-50 p-4">
       <BaseCard>
         <div className="w-full flex flex-row items-center justify-between p-4">
           <h1 className="text-2xl font-bold text-textLightColor capitalize">
@@ -25,7 +25,7 @@ const BaseModel = ({
 
           <button
             type="button"
-            className="top-3 end-2.5 text-gray-100 bg-transparent hover:bg-primary hover:text-white rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
+            className="top-3 text-gray-100 bg-transparent hover:bg-primary hover:text-white rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center shadow-none"
             onClick={() => onClose()}
           >
             <svg
@@ -66,11 +66,11 @@ const BaseModel = ({
               {projectContent.homepage ? "Live Preview" : "GitHub Repo"}
             </h1>
             <div style={{ height: "60vh", width: "100%" }}>
-              {isLoading && (
+              {isLoading ? (
                 <div className="text-center justify-center items-center py-11">
                   <p className="text-gray-300">Loading Live Preview...</p>
                 </div>
-              )}
+              ):
               <iframe
                 src={
                   projectContent.homepage
@@ -81,7 +81,7 @@ const BaseModel = ({
                 style={{ width: "100%", height: "100%", border: "1px solid #DDDDDD", borderRadius:"6px" }}
                 onLoad={handleIframeLoad}
                 allowFullScreen
-              />
+              />}
             </div>
           </div>
         </div>
