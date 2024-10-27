@@ -30,6 +30,12 @@ export const highlightTechCardsItems = [
     bgColor: "bg-[#8CC74A]/20",
   },
   {
+    name: "Gitlab CI/CD",
+    description: "Devops",
+    imageUrl: "/imgs/logos/gitlab.svg",
+    bgColor: "bg-[#FC6D25]/20",
+  },
+  {
     name: "Python",
     description: "Language",
     imageUrl: "/imgs/logos/python.svg",
@@ -40,12 +46,6 @@ export const highlightTechCardsItems = [
     description: "Python web framework",
     imageUrl: "/imgs/logos/django.svg",
     bgColor: "bg-[#3ECF8E]/20",
-  },
-  {
-    name: "Git",
-    description: "Version control",
-    imageUrl: "/imgs/logos/git.svg",
-    bgColor: "bg-[#F1502F]/20",
   },
 ];
 
@@ -88,32 +88,137 @@ export const techCardsItems = {
     bgColor: "bg-[#0EA5E9]/20",
   },
   {
-    name: "Git",
-    description: "Version control",
-    imageUrl: "/imgs/logos/git.svg",
-    bgColor: "bg-[#F1502F]/20",
+    name: "Material UI",
+    description: "CSS framework",
+    imageUrl: "/imgs/logos/materialui.svg",
+    bgColor: "bg-[#00AFFE]/20",
   },
   {
-    name: "Firebase",
-    description: "Backend tool",
-    imageUrl: "/imgs/logos/firebase.svg",
-    bgColor: "bg-[#FCCA3F]/20",
+    name: "Python",
+    description: "Language",
+    imageUrl: "/imgs/logos/python.svg",
+    bgColor: "bg-[#FED749]/20",
   },
   {
     name: "Django",
-    description: "Python framework",
+    description: "Python web framework",
     imageUrl: "/imgs/logos/django.svg",
     bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Firebase",
+    description: "Serverless Backend", //NoSQL Database
+    imageUrl: "/imgs/logos/firebase.svg",
+    bgColor: "bg-[#F6820D]/20",
+  },
+  {
+    name: "Firestore",
+    description: "Firebase NoSQL Database",
+    imageUrl: "/imgs/logos/firebase.svg",
+    bgColor: "bg-[#F6820D]/20",
+  },
+  {
+    name: "Postgresql",
+    description: "SQL Database",
+    imageUrl: "/imgs/logos/postgresql.svg",
+    bgColor: "bg-[#336790]/20",
+  },
+  {
+    name: "Mysql",
+    description: "Backend tool",
+    imageUrl: "/imgs/logos/mysql.svg",
+    bgColor: "bg-[#fff]",
+  },
+  {
+    name: "Gitlab CI/CD",
+    description: "Devops",
+    imageUrl: "/imgs/logos/gitlab.svg",
+    bgColor: "bg-[#FC6D25]/20",
+  },
+  {
+    name: "Docker",
+    description: "Microservices",
+    imageUrl: "/imgs/logos/docker.svg",
+    bgColor: "bg-[#0091E2]/20",
   },
 ],
 familiar:[
   {
-    name: "Django",
-    description: "Python framework",
-    imageUrl: "/imgs/logos/django.svg",
+    name: "Java",
+    description: "OOP language",
+    imageUrl: "/imgs/logos/java.svg",
+    bgColor: "bg-[#7E9AAC]/20",
+  },
+  {
+    name: "C Programming",
+    description: "Language",
+    imageUrl: "/imgs/logos/c.svg",
+    bgColor: "bg-[#659AD1]/20",
+  },
+  {
+    name: "Bash Scripting",
+    description: "For bash scripts",
+    imageUrl: "/imgs/logos/bash.svg",
+    bgColor: "bg-[#2F3A3D]/20",
+  },
+  {
+    name: "PL/SQL",
+    description: "Procedural SQL Language",
+    imageUrl: "/imgs/logos/plsql.svg",
+    bgColor: "bg-[#FF0000]/20",
+  },
+  {
+    name: "PHP",
+    description: "General-purpose scripting language",
+    imageUrl: "/imgs/logos/php.svg",
+    bgColor: "bg-[#000000]/20",
+  },
+  {
+    name: "MongoDB",
+    description: "No SQL Database",
+    imageUrl: "/imgs/logos/mongodb.svg",
+    bgColor: "bg-[#599536]/20",
+  },
+  {
+    name: "MS SQL Server",
+    description: "Microsoft SQL Database",
+    imageUrl: "/imgs/logos/microsoft.svg",
+    bgColor: "bg-[#FABC0B]/20",
+  },
+  {
+    name: "GCP",
+    description: "Google Cloud Platform",
+    imageUrl: "/imgs/logos/google-cloud.svg",
+    bgColor: "bg-[#CAC9C2]/20",
+  }
+],
+soft:[
+  {
+    name: "Communication",
+    description: "",
+    imageUrl: "/imgs/logos/bash.svg",
+    bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Time management",
+    description: "",
+    imageUrl: "/imgs/logos/bash.svg",
+    bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Team work",
+    description: "",
+    imageUrl: "/imgs/logos/bash.svg",
+    bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Competitive Programming",
+    description: "",
+    imageUrl: "/imgs/logos/bash.svg",
     bgColor: "bg-[#3ECF8E]/20",
   },
 ]
+
 
 }
 

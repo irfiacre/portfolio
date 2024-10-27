@@ -6,10 +6,16 @@ import { motion } from "framer-motion";
 import ShinyButton from "./ui/ShinyButton";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
+import ModalSkills from "./Modal";
 
 const Skills = () => {
+  const [open, setOpen] = useState(true)
   return (
     <div className="relative z-10 py-16 sm:py-24" id="about">
+      {open && (
+        <ModalSkills handleCloseModal={() => setOpen(false)} />
+      )}
       <div className="space-y-4 mb-10">
         <motion.h1
           initial={{ opacity: 0, x: -75 }}
@@ -43,6 +49,7 @@ const Skills = () => {
         {highlightTechCardsItems.map((cardItem) => (
           <TechCard key={cardItem.name} cardInfo={cardItem} />
         ))}
+        <br />
       </motion.div>
 
       <motion.div
@@ -53,7 +60,7 @@ const Skills = () => {
         className="flex justify-center items-center w-full pt-10"
       >
         <ShinyButton icon={<ChevronRight />}>
-          <Link href="#" target="_blank"> 
+          <Link href="#" target="_blank">
             {/* Should open a model */}
             All Technologies
           </Link>
