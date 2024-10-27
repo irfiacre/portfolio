@@ -1,8 +1,11 @@
 "use client";
 
-import { techCardsItems } from "../_lib/constants";
+import { highlightTechCardsItems } from "../_lib/constants";
 import TechCard from "./TechCard";
 import { motion } from "framer-motion";
+import ShinyButton from "./ui/ShinyButton";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const Skills = () => {
   return (
@@ -37,9 +40,24 @@ const Skills = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-4"
       >
-        {techCardsItems.map((cardItem) => (
+        {highlightTechCardsItems.map((cardItem) => (
           <TechCard key={cardItem.name} cardInfo={cardItem} />
         ))}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className="flex justify-center items-center w-full pt-10"
+      >
+        <ShinyButton icon={<ChevronRight />}>
+          <Link href="#" target="_blank"> 
+            {/* Should open a model */}
+            All Technologies
+          </Link>
+        </ShinyButton>
       </motion.div>
     </div>
   );

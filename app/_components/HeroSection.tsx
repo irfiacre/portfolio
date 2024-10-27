@@ -19,26 +19,21 @@ const HeroSection = () => {
       >
         <div className="flex flex-col justify-center items-center relative z-10 text-center">
           <p className="uppercase font-bold text-sm tracking-widest">
-            Based In Serbia
+            Based In Kigali, Rwanda
           </p>
-          {/* <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-tight tracking-wide">
-            Quality Design &{" "}
-            <span className="text-primary">Web Development</span> Synergy
-          </h1> */}
           <TextGenerateEffect
-            words="Quality Design & Web Development Synergy"
+            words="Quality Design & Sofware Development Synergy"
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
           />
           <p className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70">
-            Hi, I&apos;m Andrija, I create intuitive, visually stunning and
-            highly functional web applications.
+            Hi, I&apos;m Fiacre, an experienced sofware developer with <strong> half a decade </strong>of professional experience.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <ShinyButton icon={<ChevronRight />}>
               <Link href="#work">See My Work</Link>
             </ShinyButton>
             <a
-              href="/resume/CV_en.pdf"
+              href="#" // To Do: Add resume link
               download
               className="flex items-center gap-2.5 group"
             >
@@ -48,9 +43,9 @@ const HeroSection = () => {
               </span>
             </a>
           </div>
-          <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
+          {/* <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
             <AnimatedTooltip items={tooltipItems} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
