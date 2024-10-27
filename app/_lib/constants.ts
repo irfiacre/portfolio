@@ -239,7 +239,7 @@ export const portfolioProjects = [
       "shadcn/ui",
     ],
     liveDemoUrl: "https://shoptidy.vercel.app",
-    sourceCodeUrl: "https://github.com/andrijaweb/ecommerce-app",
+    sourceCodeUrl: "https://github.com/irfiacre/ecommerce-app",
   },
   {
     id: "socialsphere",
@@ -257,7 +257,7 @@ export const portfolioProjects = [
       "TanStack",
     ],
     liveDemoUrl: "https://socialspherenetwork.vercel.app",
-    sourceCodeUrl: "https://github.com/andrijaweb/socialmedia-reactapp",
+    sourceCodeUrl: "https://github.com/irfiacre/socialmedia-reactapp",
   },
   {
     id: "nextcut",
@@ -274,7 +274,7 @@ export const portfolioProjects = [
       "Advanced forms",
     ],
     liveDemoUrl: "https://nextcut.vercel.app",
-    sourceCodeUrl: "https://github.com/andrijaweb/nextCut-app",
+    sourceCodeUrl: "https://github.com/irfiacre/nextCut-app",
   },
 ];
 

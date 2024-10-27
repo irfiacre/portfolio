@@ -13,7 +13,7 @@ const Footer = () => {
           <h1 className="text-5xl font-bold max-w-2xl leading-[110%] relative z-10">
             Like what you see? Reach out{" "}
             <Link
-              href="mailto:andrijawebd@gmail.com"
+              href="mailto:irfiacre@gmail.com"
               className="text-primary hover:text-primary/80 border-b-2 border-primary hover:border-primary/80 transition-colors duration-200"
             >
               via email
@@ -22,14 +22,14 @@ const Footer = () => {
           </h1>
 
           <ShinyButton>
-            <Link href="mailto:andrijawebd@gmail.com">Schedule call</Link>
+            <Link href="mailto:irfiacre@gmail.com">Schedule call</Link>
           </ShinyButton>
         </div>
 
         <div className="mt-16 p-10 border-t border-dark-200 dark:border-white/10 flex flex-col md:flex-row justify-between gap-10 md:gap-0">
           <div className="space-y-2.5">
             <h3 className="text-xl font-bold relative z-10">
-              Andrija Djordjevic
+              Iradukunda Allelua Fiacre
             </h3>
             <p className="text-dark-200/70 dark:text-stone-200/70 relative z-10">
               &copy; 2024 | All rights reserved.
@@ -56,31 +56,19 @@ const Footer = () => {
             <ul className="space-y-2.5 relative z-10 text-sm sm:text-base">
               <li className="text-lg font-semibold">Projects</li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/ecommerce-app"
-                  target="_blank"
-                >
-                  Shoptidy
+                <Link href="https://music.inyarwanda.com/" target="_blank">
+                  Inyarwanda Music
                 </Link>
               </li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/socialmedia-reactapp"
-                  target="_blank"
-                >
-                  SocialSphere
+                <Link href="https://brac.rw/" target="_blank">
+                  Brac International
                 </Link>
               </li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/nextCut-app"
-                  target="_blank"
-                >
-                  NextCut
+                <Link href="#" target="_blank">
+                  More Projects
                 </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">NextFood</Link>
               </li>
             </ul>
 
@@ -88,19 +76,21 @@ const Footer = () => {
               <li className="text-lg font-semibold">Socials</li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
                 <Link
-                  href="https://www.linkedin.com/in/andrija-djordjevic-a7b794282/"
+                  href="https://www.linkedin.com/in/irfiacre"
                   target="_blank"
                 >
                   LinkedIn
                 </Link>
               </li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="https://github.com/andrijaweb" target="_blank">
+                <Link href="https://github.com/irfiacre" target="_blank">
                   Github
                 </Link>
               </li>
               <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">Instagram</Link>
+                <Link href="https://instagram.com/irfiacre/" target="_blank">
+                  Instagram
+                </Link>
               </li>
             </ul>
           </div>

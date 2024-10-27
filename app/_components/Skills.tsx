@@ -10,7 +10,7 @@ import { useState } from "react";
 import ModalSkills from "./Modal";
 
 const Skills = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div className="relative z-10 py-16 sm:py-24" id="about">
       {open && (
