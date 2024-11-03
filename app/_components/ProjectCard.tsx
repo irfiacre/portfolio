@@ -17,7 +17,7 @@ interface ProjectProps {
 
 const ProjectCard = ({ project }: { project: ProjectProps }) => {
   const { id, heading, liveDemoUrl, techStack } = project;
-
+// some should be removed
   return (
     <motion.div
       initial={{ opacity: 0, y: 75 }}
