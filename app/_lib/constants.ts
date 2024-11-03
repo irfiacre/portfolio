@@ -58,12 +58,6 @@ export const techCardsItems = {
     bgColor: "bg-[#0ACF83]/20",
   },
   {
-    name: "TypeScript",
-    description: "JavaScript but better",
-    imageUrl: "/imgs/logos/typescript.svg",
-    bgColor: "bg-[#3178C6]/20",
-  },
-  {
     name: "React",
     description: "JavaScript Library",
     imageUrl: "/imgs/logos/react.svg",
@@ -82,6 +76,12 @@ export const techCardsItems = {
     bgColor: "bg-dark-200/10 dark:bg-white/10",
   },
   {
+    name: "TypeScript",
+    description: "JavaScript but better",
+    imageUrl: "/imgs/logos/typescript.svg",
+    bgColor: "bg-[#3178C6]/20",
+  },
+  {
     name: "Tailwind",
     description: "CSS framework",
     imageUrl: "/imgs/logos/tailwind.svg",
@@ -94,16 +94,16 @@ export const techCardsItems = {
     bgColor: "bg-[#00AFFE]/20",
   },
   {
-    name: "Python",
-    description: "Language",
-    imageUrl: "/imgs/logos/python.svg",
-    bgColor: "bg-[#FED749]/20",
-  },
-  {
     name: "Django",
     description: "Python web framework",
     imageUrl: "/imgs/logos/django.svg",
     bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Python",
+    description: "Language",
+    imageUrl: "/imgs/logos/python.svg",
+    bgColor: "bg-[#FED749]/20",
   },
   {
     name: "Firebase",
@@ -224,57 +224,39 @@ soft:[
 
 export const portfolioProjects = [
   {
-    id: "shoptidy",
-    heading: "Shoptidy",
-    subheading: "a modern e-commerce website",
+    id: "music",
+    heading: "Inyarwanda Music",
+    subheading: "A music streaming platform",
     description:
       "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
-    imageUrl: "/imgs/projects/portfolio-mockup2.png",
+    imageUrl: "",
     techStack: [
       "TypeScript",
       "React",
       "Redux",
-      "Supabase",
-      "TailwindCSS",
-      "shadcn/ui",
+      "Postgres",
+      "MaterialUI CSS",
     ],
-    liveDemoUrl: "https://shoptidy.vercel.app",
-    sourceCodeUrl: "https://github.com/irfiacre/ecommerce-app",
+    liveDemoUrl: "https://music.inyarwanda.com/",
+    sourceCodeUrl: "https://github.com/irfiacre",
   },
   {
-    id: "socialsphere",
-    heading: "SocialSphere",
+    id: "driverhub",
+    heading: "Driver Hub",
     subheading: "connect with your friends online",
     description:
-      "Beautifully designed social media application with all functionalities of modern social app. Users can create, edit, and delete posts, as well as explore posts from others. The app features profile management where users can view and edit their profiles, and also save posts for later.",
-    imageUrl: "/imgs/projects/portfolio-mockup1.png",
+      "This is a drivers' recruitment platform (made up of a mobile & web app) designed to provide a comprehensive and efficient may to manage applications and creating individualized onboarding plans for drivers joining a cab company. The mobile application offers drivers a user-friendly platform to manage their onboarding process efficiently, submit their applications, take onboarding courses, provide feedback, and track their progress.",
+    imageUrl: "",
     techStack: [
-      "JavaScript",
-      "React",
-      "CRUD",
-      "Appwrite",
+      "Typescript",
+      "NextJS",
+      "React Native",
+      "Firebase",
       "TailwindCSS",
       "TanStack",
     ],
-    liveDemoUrl: "https://socialspherenetwork.vercel.app",
-    sourceCodeUrl: "https://github.com/irfiacre/socialmedia-reactapp",
-  },
-  {
-    id: "nextcut",
-    heading: "NextCut",
-    subheading: "a fresh cut in a few clicks",
-    description:
-      "A responsive web application designed to schedule and manage barber appointments. Potentional customers can create their account and schedule a new haircut. There is clearly defined period of time that is awailable for bookings. Admin have information about all appointments on dashboard page, and he is able to manage them in few clicks.",
-    imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
-    techStack: [
-      "TypeScript",
-      "NextJS",
-      "Appwrite",
-      "TailwindCSS",
-      "Advanced forms",
-    ],
-    liveDemoUrl: "https://nextcut.vercel.app",
-    sourceCodeUrl: "https://github.com/irfiacre/nextCut-app",
+    liveDemoUrl: "https://driverhub.netlify.app/",
+    sourceCodeUrl: "https://github.com/irfiacre/driver-hub_web",
   },
 ];
 
