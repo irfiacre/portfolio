@@ -38,7 +38,7 @@ const navItems = [
   { name: "Contact", link: "/#contact", icon: <ContactIcon /> },
 ];
 
-const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
+const Work = ({ params }: { params: { projectName: string } }) => {
   const projectId = params.projectName;
   const project = portfolioProjects.find((project) => project.id === projectId);
 
@@ -59,7 +59,7 @@ const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
       <div className="max-w-7xl mx-auto w-full">
         <Navbar navItems={navItems} />
 
-        <div className="pt-36">
+        {/* <div className="pt-36">
           <div className="h-screen w-full dark:bg-dark-100 bg-white dark:bg-grid-white/[0.04] bg-grid-black/[0.06] absolute top-0 left-0 flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-dark-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
           </div>
@@ -112,7 +112,7 @@ const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
               <p className="flex-1">{description}</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <Footer />
       </div>
@@ -120,4 +120,4 @@ const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
   );
 };
 
-export default ProjectOverview;
+export default Work;

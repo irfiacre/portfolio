@@ -13,7 +13,7 @@ const ProjectsSection = () => {
         </h2>
 
         <ShinyButton icon={<ChevronRight />}>
-          <Link href="https://github.com/irfiacre" target="_blank">
+          <Link href="/work" target="_blank">
             All Projects
           </Link>
         </ShinyButton>
