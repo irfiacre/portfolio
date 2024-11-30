@@ -1,4 +1,4 @@
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight, Text} from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
 import { tooltipItems } from "../_lib/constants";
@@ -26,20 +26,20 @@ const HeroSection = () => {
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
           />
           <p className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70">
-            Hi, I&apos;m Fiacre, an experienced sofware developer with <strong> half a decade </strong>of professional experience.
+            Hi, I&apos;m  <strong>Iradukunda Allelua Fiacre</strong>, an experienced sofware developer with <strong> half a decade </strong>of professional experience.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <ShinyButton icon={<ChevronRight />}>
               <Link href="#work">See My Work</Link>
             </ShinyButton>
             <a
-              href="#" // To Do: Add resume link
-              download
+              href="https://docs.google.com/document/d/1JvJkGmOICvN526i0P4Wk_9cyCwNI_fdcAJZQUogwJVo/edit?usp=sharing"
+              target="_blank"
               className="flex items-center gap-2.5 group"
             >
-              <Download className="text-primary" />
-              <span className="group-hover:text-white/70 transition-colors duration-200 font-semibold">
-                Download CV
+              <Text className="text-primary" />
+              <span className="group-hover:text-primary transition-colors duration-200 font-semibold">
+                Resume (CV)
               </span>
             </a>
           </div>
