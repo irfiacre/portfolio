@@ -18,6 +18,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import { handleGetGithubProjects } from "../_lib/utils";
+import { TextGenerateEffect } from "../_components/ui/TextGenerate";
 
 // export const generateMetadata =()=>  ({  title: 'Github Projects'});
 
@@ -50,14 +51,20 @@ const Projects = ({ params }: { params: { projectName: string } }) => {
 
   return (
     <main className="flex flex-col px-5 sm:px-10 relative">
-      
       <div className="max-w-7xl mx-auto w-full">
         <Navbar navItems={navItems} />
-        { loading ? "Loading":<div>
-        <div className="flex gap-4 flex-col sm:flex-row sm:items-center justify-between">
-          <h2 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold dark:text-stone-200">
-            Github Projects
-          </h2>
+        <div className="py-28">
+        { loading ?
+          <TextGenerateEffect
+            words="Loading"
+            className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
+          /> 
+        :<div>
+        <div className="flex gap-4 flex-col items-center justify-between">
+          <TextGenerateEffect
+            words="My Github Projects"
+            className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
+          /> 
         </div>
 
         <div className="grid lg:grid-cols-2 gap-4 mt-8">
@@ -101,6 +108,8 @@ const Projects = ({ params }: { params: { projectName: string } }) => {
 
 
         </div>}
+
+        </div>
         <Footer />
       </div> 
     </main>

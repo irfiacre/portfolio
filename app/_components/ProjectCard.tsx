@@ -26,7 +26,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
       transition={{ duration: 0.5, delay: 0.25 }}
       className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8"
     >
-      <div style={{ height:"60vh"}} className="rounded-lg overflow-hidden block">
+      <div style={{ height:"30vh"}} className="rounded-lg overflow-hidden block">
         <div className="text-center justify-center items-center py-2">
           <p className="text-gray-500 w-full text-center">Live Preview</p>
         </div>
