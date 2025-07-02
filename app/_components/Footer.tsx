@@ -32,7 +32,7 @@ const Footer = () => {
               Iradukunda Allelua Fiacre
             </h3>
             <p className="text-dark-200/70 dark:text-stone-200/70 relative z-10">
-              &copy; 2024 | All rights reserved.
+              &copy; {new Date().getFullYear()} | All rights reserved.
             </p>
           </div>
 

@@ -43,6 +43,7 @@ const Projects = ({ params }: { params: { projectName: string } }) => {
           description: obj.description,
           technologies: [obj.language, ...obj.topics],
           url: obj.html_url,
+          updated: new Date(obj.updated_at).toLocaleDateString()
         }))
       );
     setLoading(false);
@@ -62,7 +63,7 @@ const Projects = ({ params }: { params: { projectName: string } }) => {
         :<div>
         <div className="flex gap-4 flex-col items-center justify-between">
           <TextGenerateEffect
-            words="My Github Projects"
+            words="Github Projects (latest)"
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
           /> 
         </div>
@@ -86,6 +87,7 @@ const Projects = ({ params }: { params: { projectName: string } }) => {
                         ? `${project.description?.substring(0, 80)}...`
                         : project.description}
                     </p>
+                    <p className="italic text-xs text-white/50 py-2">Updated: {project.updated}</p>
                   </div>
                   <div className="w-full py-2 flex flex-wrap items-center justify-start">
                     {project.technologies.map(
