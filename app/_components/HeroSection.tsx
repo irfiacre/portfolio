@@ -1,9 +1,10 @@
-import { ChevronRight, Text} from "lucide-react";
+import { ChevronRight, Text } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
 import { tooltipItems } from "../_lib/constants";
 import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerate";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -14,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       <div
-        className="pb-20 pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative"
+        className="pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative"
         id="#home"
       >
         <div className="flex flex-col justify-center items-center relative z-10 text-center">
@@ -26,9 +27,11 @@ const HeroSection = () => {
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
           />
           <p className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70">
-            Hi, I&apos;m  <strong>Iradukunda Allelua Fiacre</strong>, an experienced sofware developer with <strong> half a decade </strong>of professional experience.
+            Hi, I&apos;m <strong>Iradukunda Allelua Fiacre</strong>, an
+            experienced sofware developer with <strong> half a decade </strong>
+            of professional experience.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
+          {/* <div>
             <ShinyButton icon={<ChevronRight />}>
               <Link href="#work">See My Work</Link>
             </ShinyButton>
@@ -42,10 +45,31 @@ const HeroSection = () => {
                 Resume (CV)
               </span>
             </a>
-          </div>
-          {/* <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
-            <AnimatedTooltip items={tooltipItems} />
           </div> */}
+          <div className="pt-20">
+            <h1 className="py-5 font-semibold"> Trusted By</h1>
+            <div className="w-full flex flex-col sm:flex-row items-center gap-4 opacity-50">
+              <Image
+                src={"/imgs/brands/rohde_schwarz.svg"}
+                width={300}
+                height={100}
+                alt="Rohde & Schwarz"
+                className=""
+              />
+              <span> (And) </span>
+              <div className="flex items-center justify-center w-full">
+                <Image
+                  src={"/imgs/brands/inyarwanda.png"}
+                  width={80}
+                  height={80}
+                  alt="Inyarwanda"
+                />
+                <span className="text-5xl font-extrabold w-full opacity-65">
+                  Inyarwanda Ltd
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

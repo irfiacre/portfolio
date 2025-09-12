@@ -1,9 +1,9 @@
 import "@/app/_styles/globals.css";
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
